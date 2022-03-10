@@ -7,7 +7,7 @@ export default function EpsiodeList(props: any): Array<JSX.Element> {
   return episodes.map((episode: any) => {
     return (
       <section key={episode.id} className='episode-box'>
-        <img src={episode.image.medium} alt={'Rick and Morty ${episode.name}'}/>
+        <img src={episode?.image?.medium} alt={'Rick and Morty ${episode.name}'}/>
         <div>{episode.name}</div>
         <section style={{ display: 'flex', justifyContent: 'space-between'}}>
           <div>Season: {episode.season} Number: {episode.number}</div>

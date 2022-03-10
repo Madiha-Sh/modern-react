@@ -10,6 +10,8 @@ export default function HomePage() {
 
   React.useEffect(() => {
     state.episodes.length === 0 && fetchDataAction(dispatch)
+    console.log('called');
+    
   })
 
 const props: IEpisodeProps = {
