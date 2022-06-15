@@ -14,12 +14,12 @@ export default function HomePage() {
     
   })
 
-const props: IEpisodeProps = {
-  episodes: state.episodes,
-  store: { state, dispatch },
-  toggleFavAction: toggleFavAction,
-  favourites: state.favourites
-}
+  const props: IEpisodeProps = {
+    episodes: state.episodes,
+    store: { state, dispatch },
+    toggleFavAction: toggleFavAction,
+    favourites: state.favourites
+  }
 
   return (    
     <React.Fragment>
